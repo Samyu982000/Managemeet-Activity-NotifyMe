@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch(view.getId()){
             case R.id.Set_Notification:
                 int hour = timePicker.getCurrentHour();
-                int minute = timePicker.getCurrentMinute();
+                int minute = timePicker.getCurrentMinute()-15;
 
                 // Create time
                 Calendar startTime = Calendar.getInstance();
